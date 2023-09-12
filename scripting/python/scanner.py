@@ -29,9 +29,11 @@ if len(sys.argv) == 2:
 	else:
 		print("-" * 50)
 		print(result[1])
+		sys.exit()
 else:
 	print("Invalid no of arguments")
 	print("python3 filename ip_address")
+	sys.exit()
 
 
 try:
@@ -45,6 +47,8 @@ try:
 		ans = s.connect_ex((target, port))
 		if ans == 0:
 			print(f"Port {port} is open")
+		else:
+			print(f"Port {port} is closed")
 		# Close the connection to the port
 		s.close()
 
