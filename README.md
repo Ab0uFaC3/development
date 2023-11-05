@@ -1,1 +1,1 @@
-This repository is for practicing coding
+This repository is for learning, practicing coding in project based method
