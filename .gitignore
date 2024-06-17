@@ -1,3 +1,15 @@
 c/.DS_Store
 .DS_Store
 .vscode
+development.sln
+ASP.NET Core/MyNewApp/obj/*
+c#/Projects/BinaryToDecimalConverter/obj 2/*
+c#/TestProject/bin/*
+c#/TestProject/obj/*
+c#/Projects/BinaryToDecimalConverter/obj/*
+c#/Projects/BinaryToDecimalConverter/bin/*
+c#/c#.sln
+c#/Projects/Api/obj/*
+c#/Projects/Api/bin/*
+c#/Projects/Api/Migrations/*
+c#/Projects/Api/Api.http
