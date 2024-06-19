@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World JS</title>
+</head>
+<body>
+    <div id="root">
+        <!-- Basic Hello World using HTML tag -->
+        <!-- <h1>Hello World</h1> -->
+         
+        <script>
+            // Print Hello World using JS
+            // Create the h1 tag 
+            const heading =  document.createElement("h1")
+            heading.innerHTML = "Hello World";
+
+            // Pass above statement to div
+            const getRoot = document.getElementById("root");
+            // heading variable will be passed as child to div with id root
+            getRoot.appendChild(heading);
+            
+        </script>
+    </div>
+</body>
+</html>

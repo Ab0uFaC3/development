@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World React</title>
+    <link rel="stylesheet" href="index.css">
+
+        <!-- Importing react modules from CDN links -->
+         <!-- https://legacy.reactjs.org/docs/cdn-links.html -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+                                        <!-- OR -->
+
+        <!-- For new React version 19 => Can only import in script tag using type module -->
+         <!-- https://peterkellner.net/2024/05/10/running-react-19-from-a-cdn-and-using-esm.sh/#using-a-cdn-the-new-way-with-react-19-and-esmsh -->
+        <!-- <script type="module">
+            import React from "https://unpkg.com/react@18/umd/react.development.js"
+            import ReactDOMClient from "https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+        </script> -->
+        
+</head>
+<body>
+    <!-- Using Inline JS in script -->
+    <!-- <div id="root">
+        <script>
+            // Print Hello World using React
+
+            // creates the required element - using React core module
+            // 1st param => HTML tag, 2nd param => object to pass attributes to tag, 3rd param => Text to be displayed
+            const heading = React.createElement("h1", {id: "heading"}, "Hello World");
+
+            // creates a root element where all the React code will be executed (in our case div tag with id root) - using ReactDOM module
+            const root = ReactDOM.createRoot(document.getElementById("root"));
+
+            // renders the heading data in root
+            root.render(heading);
+
+        </script>
+    </div> -->
+
+    <!-- Using external JS File -->
+    <div id="root">
+        <script src="./App.js"></script>
+    </div>
+
+    <!-- Nested HTML structure -->
+    <!-- 
+        <div>
+            <div>
+                <h1> Heading 1
+                </h1>
+            </div>
+        </div>
+    -->
+    <div id="root1">
+        <script src="./App.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+Theory:
+1. What is Emmet?
+- web developer’s toolkit that can greatly improve your HTML & CSS workflow
+- in simple terms, it is a shorthand technique that generates relevant and elaborate code
+- increases the efficiency and saves time in typing the code
+E.g.
+    ul>li translates to <ul><li></li></ul>
+
+2. Difference between a Library and Framework?
+- both are reusable codes written by someone else providing abstraction
+- Library: 
+    * can be used anywhere in the code if not everywhere. 
+    * gives control to developer over the flow of application
+- Framework:
+    * it takes control over the flow of the application
+    * developer can still write their own code but cannot change the structuring of the application (fill in the blanks)
+- main difference is the Inversion of Control (who has the control)
+
+3. What is CDN? Why do we use it?
+- Content Delivery Network
+- they are servers used to cache the web content near to the user
+- increases speed, performance, security (prevents against DDOS)
+
+4. Why is React known as React?
+- because it reacts only when there are changes in the component's state or props
+- with its virtual DOM, React finds and updates only the necessary parts
+
+5. What is crossorigin in script tag?
+- used to enable CORS (Cross Origin Resource Sharing)
+- helps in request resources from a different domain than the current
+E.g.
+    current domain => www.example.com
+    requested domain => www.google.com
+- if CORS is not enabled, requested domain cannot be loaded
+
+6. What is diference between React and ReactDOM
+- React: library for developing UI (irrespective of medium i.e. browser, mobile, etc)
+- ReactDOM: library used for binding React components and browser DOM
+
+7. What is difference between react.development.js and react.production.js files via CDN?
+- react.development.js: provides developer friendly tools and environment
+- react.production.js: used for increasing code efficiency and compression
+
+8. What is async and defer?
+- both are boolean attributes, used with <script> for loading external links
+- Normal scenario: 
+    if <script> is encountered during HTML parsing, browser halts the parsing, fetches the link and executes it in and resumes the parsing
+- async attribute: 
+    * if <script> is encountered during HTML parsing, browser continues the parsing and fetches the link simultaneously. 
+    * once fetched, it halts the parsing, executes the link and resumes the parsing
+    * does not guarantee order of execution of script
+- defer attribute: 
+    * if <script> is encountered during HTML parsing, browser continues the parsing and fetches the link simultaneously. 
+    * once feteched, it executes the link once parsing is complete
+    * does guarantee order of execution of script
+
+References:
+1. 
+    a. https://docs.emmet.io/ 
+    b. https://medium.com/@kartik2406/web-development-with-vs-code-part-1-emmet-6af80f0f630c
+2. 
+    a. https://www.red-gate.com/simple-talk/development/other-development/the-difference-between-libraries-and-frameworks/
+    b. https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/
+3. https://www.cloudflare.com/learning/cdn/what-is-a-cdn/
+4. 
+    a. https://www.linkedin.com/pulse/ever-wondered-why-its-called-react-lets-break-down-kaustav-sarkar-tyovc
+    b. https://www.linkedin.com/pulse/why-react-called-muhammad-irfan-wfrwc
+6. https://medium.com/programming-sage/react-vs-react-dom-a0ed3aea9745
+7. https://stackoverflow.com/questions/75791204/the-difference-between-react-development-js-and-react-production-js-files-via-cd
+8. https://www.youtube.com/watch?v=IrHmpdORLu8
