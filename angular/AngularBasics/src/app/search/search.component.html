@@ -1,0 +1,22 @@
+<style>
+    .colorClass{
+    color:red;
+}
+</style>
+
+<div>
+    <!-- <label for="searching">Enter text: </label>
+    <input id="searching" type="text" [value]="type">
+    <br>
+    <br>
+    <label for="emailAddress">Enter email address: </label>
+    <input id="emailAddress" type="email" [(ngModel)]="emailValue" (input)="getEmailAddress()">
+    <br> -->
+    <button type="submit" [class]="hello">Click Me</button>
+    <br><br>
+    <input type="number" #inputVariable on-input="getAge()">
+
+    <ng-content select="">
+        <p>Hello World</p>
+    </ng-content>
+</div>

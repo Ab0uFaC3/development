@@ -1,0 +1,35 @@
+<app-student-count 
+    [all]="getAllData()"
+    [male]="getMaleData()"
+    [female]="getFemaleData()"
+    (changedRadioButtonValue)="getSelectedRadioButton($event)"
+></app-student-count>
+<br/><br/>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>Course Fee</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor='let student of students'>
+            <tr *ngIf="selectedStudentCountRadioButton=='All' ||
+                       selectedStudentCountRadioButton==student.Gender">
+                <td>{{student.ID | uppercase}}</td>
+                <td>{{student.FirstName | myTitle:student.Gender:student.LastName}}</td>
+                <td>{{student.Gender}}</td>      
+                <td>{{student.DOB | date:'dd/MM/y'}}</td>
+                <td>{{student.CourseFee | currency:'USD':true:'5.1-3'}}</td>
+            </tr>
+        </ng-container>
+        <tr *ngIf="!students || students.length==0">
+            <td colspan="10">
+                No Students to display
+            </td>
+        </tr>
+    </tbody>
+</table>
