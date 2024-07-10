@@ -21,3 +21,91 @@ react/react-app/.parcel-cache
 react/assignment/3/node_modules
 react/assignment/3/dist
 react/assignment/3/.parcel-cache
+
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+angular/AngularBasics/dist
+angular/AngularBasics/tmp
+angular/AngularBasics/out-tsc
+angular/AngularBasics/bazel-out
+
+# Node
+angular/AngularBasics/node_modules
+angular/AngularBasics/npm-debug.log
+angular/AngularBasics/yarn-error.log
+
+# IDEs and editors
+angular/AngularBasics/.idea/
+angular/AngularBasics/.project
+angular/AngularBasics/.classpath
+angular/AngularBasics/.c9/
+angular/AngularBasics/*.launch
+angular/AngularBasics/.settings/
+angular/AngularBasics/*.sublime-workspace
+
+# Visual Studio Code
+angular/AngularBasics/.vscode/*
+angular/AngularBasics/!.vscode/settings.json
+angular/AngularBasics/!.vscode/tasks.json
+angular/AngularBasics/!.vscode/launch.json
+angular/AngularBasics/!.vscode/extensions.json
+angular/AngularBasics/.history/*
+
+# Miscellaneous
+angular/AngularBasics/.angular/cache
+angular/AngularBasics/.sass-cache/
+angular/AngularBasics/connect.lock
+angular/AngularBasics/coverage
+angular/AngularBasics/libpeerconnection.log
+angular/AngularBasics/testem.log
+angular/AngularBasics/typings
+
+# System files
+angular/AngularBasics/.DS_Store
+angular/AngularBasics/Thumbs.db
+
+
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+angular/routing-basics/dist
+angular/routing-basics/tmp
+angular/routing-basics/out-tsc
+angular/routing-basics/bazel-out
+
+# Node
+angular/routing-basics/node_modules
+angular/routing-basics/npm-debug.log
+angular/routing-basics/yarn-error.log
+
+# IDEs and editors
+angular/routing-basics/.idea/
+angular/routing-basics/.project
+angular/routing-basics/.classpath
+angular/routing-basics/.c9/
+angular/routing-basics/*.launch
+angular/routing-basics/.settings/
+angular/routing-basics/*.sublime-workspace
+
+# Visual Studio Code
+angular/routing-basics/.vscode/*
+angular/routing-basics/!.vscode/settings.json
+angular/routing-basics/!.vscode/tasks.json
+angular/routing-basics/!.vscode/launch.json
+angular/routing-basics/!.vscode/extensions.json
+angular/routing-basics/.history/*
+
+# Miscellaneous
+angular/routing-basics/.angular/cache
+angular/routing-basics/.sass-cache/
+angular/routing-basics/connect.lock
+angular/routing-basics/coverage
+angular/routing-basics/libpeerconnection.log
+angular/routing-basics/testem.log
+angular/routing-basics/typings
+
+# System files
+angular/routing-basics/.DS_Store
+angular/routing-basics/Thumbs.db
+
